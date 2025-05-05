@@ -27,9 +27,9 @@ export default function MinesweeperPage() {
           </div>
         </Card>
 
-        {/* Select Difficulty Card */}
+        {/* Start Game Card */}
         <Card
-          title="Select Difficulty"
+          title="Start Game"
           variant="hover"
           bgColor="base-200"
         >
@@ -38,20 +38,7 @@ export default function MinesweeperPage() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Easy (9x9)
-            </Link>
-            <Link href="/minesweeper/medium" className="btn btn-secondary w-full">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              Medium (16x16)
-            </Link>
-            <Link href="/minesweeper/hard" className="btn btn-accent w-full">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              Hard (16x30)
+              Play Minesweeper (9x9)
             </Link>
           </div>
         </Card>
@@ -69,7 +56,6 @@ export default function MinesweeperPage() {
                   <th>Rank</th>
                   <th>Player</th>
                   <th>Time</th>
-                  <th>Difficulty</th>
                 </tr>
               </thead>
               <tbody>
@@ -77,19 +63,16 @@ export default function MinesweeperPage() {
                   <th>1</th>
                   <td>Player1</td>
                   <td>00:45</td>
-                  <td>Easy</td>
                 </tr>
                 <tr>
                   <th>2</th>
                   <td>Player2</td>
                   <td>01:20</td>
-                  <td>Easy</td>
                 </tr>
                 <tr>
                   <th>3</th>
                   <td>Player3</td>
                   <td>01:45</td>
-                  <td>Easy</td>
                 </tr>
               </tbody>
             </table>
@@ -109,28 +92,6 @@ export default function MinesweeperPage() {
             <li>Clear all non-mine squares to win</li>
             <li>Click a mine to lose</li>
           </ul>
-        </Card>
-
-        {/* Power-ups Card */}
-        <Card
-          title="Power-ups"
-          variant="hover"
-          bgColor="base-200"
-        >
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2">
-              <div className="badge badge-primary">Reveal</div>
-              <span className="text-sm">Reveal a safe square</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="badge badge-secondary">Auto-Flag</div>
-              <span className="text-sm">Automatically flag obvious mines</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="badge badge-accent">Time Freeze</div>
-              <span className="text-sm">Pause the timer for 10 seconds</span>
-            </div>
-          </div>
         </Card>
 
         {/* Achievements Card */}
