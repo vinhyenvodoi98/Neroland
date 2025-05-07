@@ -13,7 +13,7 @@ export default function Home() {
               Welcome to Neroland
             </h1>
             <p className="py-6 text-xl">
-              Where Gaming Meets NFTs: Play, Create, and Earn in a Revolutionary Gaming Ecosystem
+              The First Gaming Platform Built on Nerochain: Where Gaming Meets NFTs in a Revolutionary Ecosystem
             </p>
             <div className="flex gap-4 justify-center">
               <Link href="/games" className="btn btn-primary">
@@ -22,6 +22,90 @@ export default function Home() {
               <Link href="/create" className="btn btn-outline">
                 Create Game
               </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Nerochain Section */}
+      <div className="py-20 bg-base-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold mb-6">Powered by Nerochain</h2>
+              <p className="text-lg mb-4">
+                Neroland is built on Nerochain, a high-performance blockchain designed for gaming and NFT applications. 
+                Experience fast transactions, low fees, and seamless integration with your favorite games.
+              </p>
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  <span>Fast Transactions</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Low Fees</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <span>Secure Infrastructure</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                  <span>Cross-Chain Compatibility</span>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a 
+                  href="https://app.testnet.nerochain.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-outline btn-primary"
+                >
+                  Explore Nerochain
+                </a>
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="card bg-base-200 shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title mb-4">Nerochain Benefits</h3>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Optimized for gaming and NFT transactions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Built-in smart contract support for game mechanics</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Scalable infrastructure for growing game communities</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Developer-friendly tools and documentation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
