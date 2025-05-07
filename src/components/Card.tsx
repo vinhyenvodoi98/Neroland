@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ReactNode } from 'react';
 
 interface CardProps {
@@ -40,7 +41,7 @@ export default function Card({
     <div className={`card bg-${bgColor} shadow-xl ${getVariantClasses()} ${className}`}>
       {image && (
         <figure className="px-4 pt-4">
-          <img src={image} alt={imageAlt || title || 'Card image'} className="rounded-xl" />
+          <Image src={image} alt={imageAlt || title || 'Card image'} className="rounded-xl" />
         </figure>
       )}
       <div className="card-body">
